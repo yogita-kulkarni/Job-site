@@ -1,0 +1,247 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="E:\XentoSystem\style2.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="validation.js"></script>
+    <script type="text/javascript">
+      function f2() {
+        document.getElementById("area1").innerHTML =
+          "<label>Company Profile</label><br>";
+        document.getElementById("area").innerHTML =
+          "<textarea id='arr' rows='7'> fulltime</textarea>";
+      }
+      function txarea() {
+        document.getElementById("area1").innerHTML =
+          "<label>Company Profile</label><br>";
+        document.getElementById("area").innerHTML =
+          "<textarea id='arr' rows='7'> parttime</textarea>";
+      }
+      function f3() {
+        document.getElementById("area1").innerHTML =
+          "<label>Company Profile</label><br>";
+        document.getElementById("area").innerHTML =
+          "<textarea id='arr' rows='7'> Freelance</textarea>";
+      }
+      function f4() {
+        document.getElementById("area1").innerHTML =
+          "<label>Company Profile</label><br>";
+        document.getElementById("area").innerHTML =
+          "<textarea id='arr' rows='7'> Internship</textarea>";
+      }
+      function f5() {
+        document.getElementById("area1").innerHTML =
+          "<label>Company Profile</label><br>";
+        document.getElementById("area").innerHTML =
+          "<textarea id='arr' rows='7'> Temporary</textarea>";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="one">
+      <div class="container">
+        <nav class="navbar navbar-style">
+          <div class="navbar-header">
+            <h3 class="logo"><b>Jobpply</b></h3>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="Assign1.html">Home</a>
+            </li>
+            <li><a href="">about</a></li>
+            <li><a href="">Candidates</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">contact</a></li>
+            <a href="Assign2.1.html">
+              <button type="button" class="btn btn-primary">
+                Post a Job
+              </button></a
+            >
+            <a href="Assign2.3.html">
+              <button type="button" class="btn btn-danger">
+                Want a Job
+              </button></a
+            >
+          </ul>
+        </nav>
+        <div class="two">
+          <b>Home></b>&nbsp;&nbsp;NEW JOB POST
+          <br />
+          <h1><b>Post A Job</b></h1>
+        </div>
+      </div>
+    </div>
+    <div class="three">
+      <div class="container" id="contain">
+        <div class="col-sm-6">
+          <div class="jumbotron">
+            <form name="myform" action="" onsubmit="return validate()">
+              <span id="msg" style="color:red; font-weight: bold"> </span
+              ><br /><br />
+              <input type="checkbox" /><span style="color: green">$500</span>
+              For 30 days<br />
+              <input type="checkbox" /><span style="color: green">$300</span>/
+              Monthly Recurring<br /><br />
+              <div class="form-group">
+                <label for="jobtitle">Job Title</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="jobtitle"
+                  placeholder="eg.Professional UI/UX Designer"
+                />
+              </div>
+              <div class="form-group">
+                <label for="company">company</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="company"
+                  placeholder="eg.Facebook,Inc."
+                /><br />
+              </div>
+              <div class="form-group">
+                <label for="jobtype">Job Type</label>
+                <div class="radio" onclick="f2()">
+                  <label>
+                    <input
+                      type="radio"
+                      name="optionsRadios"
+                      id="optionsRadios1"
+                      value="option1"
+                      checked
+                    />
+                    Full Time
+                  </label>
+                </div>
+                <div class="radio" onclick="txarea()">
+                  <label>
+                    <input
+                      type="radio"
+                      name="optionsRadios"
+                      id="optionsRadios2"
+                      value="option2"
+                    />
+                    Part Time
+                  </label>
+                </div>
+                <div class="radio" onclick="f3()">
+                  <label>
+                    <input
+                      type="radio"
+                      name="optionsRadios"
+                      id="optionsRadios3"
+                      value="option3"
+                    />
+                    Freelance
+                  </label>
+                </div>
+                <div class="radio" onclick="f4()">
+                  <label>
+                    <input
+                      type="radio"
+                      name="optionsRadios"
+                      id="optionsRadios4"
+                      value="option4"
+                    />
+                    Internship
+                  </label>
+                </div>
+                <div class="radio" onclick="f5()">
+                  <label>
+                    <input
+                      type="radio"
+                      name="optionsRadios"
+                      id="optionsRadios5"
+                      value="option5"
+                    />
+                    Temporary
+                  </label>
+                </div>
+                <span id="area1"> </span>
+                <span id="area"> </span>
+              </div>
+              <br />
+              <div class="form-group">
+                <label for="location">Location</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="location"
+                  placeholder="Western City,UK"
+                />
+              </div>
+              <div class="form-group">
+                <label for="jobdescition">Job Description</label>
+                <textarea
+                  class="form-control"
+                  rows="7"
+                  id="description"
+                ></textarea>
+              </div>
+              <input
+                class="btn btn-default"
+                type="submit"
+                value="Post"
+                id="subbtn"
+              />
+            </form>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="jumbotron">
+            <h3>Contact Info</h3>
+            <br />
+            <b>Address</b>
+            <br />
+            203 Fake St. Mountain View, San<br />
+            Francisco,California,USA<br /><br />
+            <b>Phone</b><br />
+            <span style="color:blue"> +1 232 3235 324<br /><br /></span>
+
+            <b>Email Address</b><br />
+            <span style="color:blue">[email protected]</span><br />
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="jumbotron" style="text-align: left;">
+            <h3>More Info</h3>
+            <br />
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.ipsa ad
+            iure porro mollitia architecto consequuntur. Distinctio nisi
+            perferendis dolore, ipsa consectetur
+            <a class="btn btn-default" href="#" role="button" id="learnbtn"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="foot">
+      <h2>Subscribe to our newsletter</h2>
+      <br />
+      <h4>
+        Far far away,behind the mountains,far from the countries vakalia and<br />
+        Consonantia,there live the blind texts. Separated they live in
+      </h4>
+      <br />
+
+      <div class="input-group">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter email address"
+        />
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button" id="btng">
+            Subscribe
+          </button>
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
